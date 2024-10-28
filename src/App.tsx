@@ -24,7 +24,15 @@ function App() {
   }
 
   return (
-    <div className="flex items-center justify-center h-full">
+    <div className="flex-row items-center justify-center h-full">
+      <header>
+        <a href="#contenu" className="sr-only">
+          Allez au contenu
+        </a>
+      </header>
+      <h1 tabIndex={0} id="contenu" className="pb-20 text-xl font-bold">
+        Welcome! Sometimes we all need a bit of advice.
+      </h1>
       <div className="relative max-w-sm mx-auto bg-gray-800 rounded-lg sm:max-w-lg ">
         {advice ? (
           <div
