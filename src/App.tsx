@@ -25,13 +25,8 @@ function App() {
 
   return (
     <div className="flex-row items-center justify-center h-full">
-      <header>
-        <a href="#contenu" className="sr-only">
-          Allez au contenu
-        </a>
-      </header>
-      <h1 tabIndex={0} id="contenu" className="pb-20 text-xl font-bold">
-        Welcome! Sometimes we all need a bit of advice.
+      <h1 tabIndex={0} id="contenu" className="py-20 text-xl font-bold">
+        Advice generated at random, good luck!
       </h1>
       <div className="relative max-w-sm mx-auto bg-gray-800 rounded-lg sm:max-w-lg ">
         {advice ? (
@@ -87,7 +82,7 @@ function App() {
         <div className="absolute w-full -bottom-9">
           <button
             aria-label="generate random advice"
-            className="w-16 h-16 p-5 mx-auto transition duration-300 bg-green-300 rounded-full hover:shadow-buttonshadow hover:shadow-green-300/50"
+            className="w-16 h-16 p-5 mx-auto transition duration-300 bg-green-300 rounded-full hover:bg-green-600 hover:shadow-buttonshadow hover:shadow-green-300/50 focus:outline focus:outline-4 focus:outline-rose-400"
             onClick={() => fetchData()}
           >
             <DiceIcon />
